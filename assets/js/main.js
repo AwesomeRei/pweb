@@ -1,7 +1,6 @@
 var main=function(){
-	$('.dropdown-menu').find('form').click(function(e){
-		e.stopPropagation();
-	});
+  $('.ui.dropdown').dropdown();	
+
 };
 
 $(document).ready(main);
