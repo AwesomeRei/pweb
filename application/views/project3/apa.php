@@ -1,1 +1,0 @@
-Halo ini rei dan agung
