@@ -1,13 +1,9 @@
 var main=function(){
-  $('.right.menu.open').on("click",function(e){
-        e.preventDefault();
-    $('.ui.vertical.menu').toggle();
-  });
-  $('.ui.dropdown').dropdown();
-  $('.ui.sticky').sticky({
-    context: '#exam'
-  });
+	$('.slider').slider({full_width:true});
+	$('.row').click(function(){
 
-};
-
+		$exp = $(this).children('.answers');
+		$exp.toggleClass('hidden');
+	});
+}
 $(document).ready(main);

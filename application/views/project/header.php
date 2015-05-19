@@ -10,4 +10,4 @@
     <link href="<?php echo base_url("assets/css/styles.css"); ?>" rel="stylesheet">
     <script src="<?php echo base_url("assets/js/jquery-2.1.3.min.js") ?>"></script>
     <script src="<?php echo base_url("assets/materialize/js/materialize.js") ?>"></script>
-    <!--script src="<?php echo base_url("assets/js/main.js") ?>"></script-->
+    <script src="<?php echo base_url("assets/js/main.js") ?>"></script>
