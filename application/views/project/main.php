@@ -9,14 +9,18 @@
 				<div class="slider">
 					<ul class="slides">
 						<li>
+							<a href="#">
 							<img src="<?php echo base_url("assets/image/Capture.png") ?>">
+							</a>
 							<div class="caption left-align">
 								<h3>Title Caption</h3>
 							</div>
 						</li>
 						<li>
+
+							<a href="#">
 							<img src="<?php echo base_url("assets/image/nlc3.jpg") ?>">
-			
+							</a>
 							<div class="caption left-align">
 								<h3>Title Caption</h3>
 							</div>

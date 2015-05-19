@@ -1,7 +1,12 @@
 body {
 	margin: 0;
 	display: flex;
+	min-height: 100vh;
 	flex-direction: column;
+	font-family: 'Montserrat',sans-serif;
+}
+main {
+	flex:1 0 auto;
 }
 .image {
 	height: auto;
@@ -17,6 +22,9 @@ body {
 	font-style: serif;
 	text-align: center;
 	font-size: 0.7em;
+}
+.navb {
+	margin-left: 1em;
 }
 
 .hidden {
