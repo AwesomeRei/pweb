@@ -17,8 +17,8 @@
 					<li><a href="#">Welcome Andre!</a></li>
 				</ul>
 				<ul class="side-nav" id="mobile-demo">
-					<li><a href="#">Login</a></li>
-					<li><a href="#">SignUP</a></li>
+					<li><a href="#">New Message</a></li>
+					<li><a href="#"></a></li>
 				</ul>
 			</div>
 		</nav>

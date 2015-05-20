@@ -7,10 +7,11 @@ var main=function(){
 		$exp = $(this).children('.answers');
 		$exp.toggleClass('hidden');
 	});
-	$('.add').click(function(){
-		$('.form').removeClass('hidden');
-	});
-
+	$('.modal-trigger').leanModal();
+	$('.tabs-wrapper').pushpin({ top: $('.tabs-wrapper').offset().top });
+ 	$('.collapsible').collapsible({
+     	accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
 
 }
 $(document).ready(main);

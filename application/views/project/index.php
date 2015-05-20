@@ -1,20 +1,25 @@
 </head>
 <body>
 	<main>
-		<div class="green">
+		<div class="mine">
 			<div class="row">
 				<br>
 				<br>
 				<div class="col s3 offset-s1">
 					<img src="<?php echo base_url("assets/image/nlc3.jpg") ?>" class="responsive-img">
 				</div>
-				<div class="col s6 offset-s1">
-					<div class="container">
-						<h1 class="header white-text bold">SMARTHEALTH</h1>
-						<div class="row center">
-							<h5>Everything is available Here</h5>
+				<div class="col s3 offset-s2">
+					<div class="row">
+						<div class="col s12">
+							<h2>Company</h2>
 						</div>
 					</div>
+					<div class="row">
+						<div class="s12">
+							<p>Everyone has chance to be 
+						</div>
+					</div>
+
 				</div>
 			</div>
 			<div class="row">
@@ -32,21 +37,21 @@
 		</div>
 	</main>
 	<footer class="footer-copyright white">
-		<div class="row">
+		<div class="row container">
 			<div class="col s2 offset-s1">
-				<img src="<?php echo base_url("assets/image/Capture.png") ?>" class="circle responsive-img">
+				<img src="<?php echo base_url("assets/image/me.jpg") ?>" class="circle responsive-img">
 			</div>
 
 			<div class="col s2">
-				<img src="<?php echo base_url("assets/image/Capture.png") ?>" class="circle responsive-img">
+				<img src="<?php echo base_url("assets/image/ade.jpg") ?>" class="circle responsive-img">
 			</div>
 
 			<div class="col s2">
-				<img src="<?php echo base_url("assets/image/Capture.png") ?>" class="circle responsive-img">
+				<img src="<?php echo base_url("assets/image/upon.jpg") ?>" class="circle responsive-img">
 			</div>
 
 			<div class="col s2">
-				<img src="<?php echo base_url("assets/image/Capture.png") ?>" class="circle responsive-img">
+				<img src="<?php echo base_url("assets/image/rizok.jpg") ?>" class="circle responsive-img">
 			</div>
 
 			<div class="col s2">
