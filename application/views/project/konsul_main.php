@@ -48,34 +48,32 @@
 		<div class="container">
 			<div>
 				<ul class="collapsible" data-collapsible="accordion">
-					<?php 
-						foreach ($news as $tmp) {
-							
+					<?php
+
+						var_dump($ans_list);
+						var_dump($question);
+						var_dump($ans_by_question);
+						if(isset($ans_by_question)) :
 					?>
+					<?php foreach ($ans_by_question as $question => $ans_list):  ?>
 					<li class="">
 						<div class="collapsible-header">
-							<h6 class=""><?php echo $tmp->title; ?></h6>
+							<h6 class=""><?php echo $question[$question]; ?></h6>
 						</div>
+						<?php foreach ($ans_list as $ans) : ?>
 						<div class="collapsible-body">
-							<p>The answer of your question goes here. The doctors will answer it. but god damn it madafacka it is so long. the deadline is in 6 days. keep up your work damn it. believe that you can</p>
+							<p><?php echo $ans->content; ?></p>
 							<div class="right">
 								<p class="">by : Who $name</p>
 							</div>
-
 						</div>
-						<div class="collapsible-body">
-							<p>The answer of your question goes here. The doctors will answer it. but god damn it madafacka it is so long. the deadline is in 6 days. keep up your work damn it. believe that you can</p>
-						</div>
-
-						<div class="collapsible-body">
-							<p>The answer of your question goes here. The doctors will answer it. but god damn it madafacka it is so long. the deadline is in 6 days. keep up your work damn it. believe that you can</p>
-						</div>
-
-						<div class="collapsible-body">
-							<p>The answer of your question goes here. The doctors will answer it. but god damn it madafacka it is so long. the deadline is in 6 days. keep up your work damn it. believe that you can</p>
-						</div>
+						<?php endforeach; ?>
+					<?php endforeach; ?>
 					</li>
-					<?php }?>
+					<?php else: ?>
+					<p>Sorry Dude no content</p>
+
+				<?php endif; ?>
 				</ul>
 			</div>
 			<!--div>
