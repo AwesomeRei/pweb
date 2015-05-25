@@ -5,18 +5,18 @@
 			<div class="row">
 				<br>
 				<br>
-				<div class="col s3 offset-s1">
-					<img src="<?php echo base_url("assets/image/nlc3.jpg") ?>" class="responsive-img">
+				<div class="col s2 offset-s2">
+					<img src="<?php echo base_url("assets/image/Untitled-1.png") ?>" class="responsive-img">
 				</div>
-				<div class="col s3 offset-s2">
+				<div class="col s7 right white-text">
 					<div class="row">
-						<div class="col s12">
+						<div class="col s12 center">
 							<h2>Company</h2>
 						</div>
 					</div>
 					<div class="row">
 						<div class="s12">
-							<p>Everyone has chance to be 
+							<p>Everyone has chance to be something. Never underestimate someone's willing power. cause fuck it I'm out</p>
 						</div>
 					</div>
 
@@ -39,7 +39,7 @@
 	<footer class="footer-copyright white">
 		<div class="row container">
 			<div class="col s2 offset-s1">
-				<img src="<?php echo base_url("assets/image/me.jpg") ?>" class="circle responsive-img">
+				<img src="<?php echo base_url("assets/image/me.jpg") ?>" class="circle responsive-img img">
 			</div>
 
 			<div class="col s2">
