@@ -30,7 +30,7 @@
 			<div class="row">
 				<div class="col s5 offset-s3">
 					<div class="container">
-						<a class="btn btn-large orange darken-2 bold">Get Started HERE</a>
+						<a class="btn btn-large orange darken-2 bold" href="<?php echo site_url('homepage/home') ?>">Get Started HERE</a>
 					</div>
 				</div>
 			</div>

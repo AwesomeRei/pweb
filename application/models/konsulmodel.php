@@ -9,14 +9,14 @@ class Konsulmodel extends CI_Model
 
 		$this->load->database();
 		$this->db->select('*');
-		$this->db->from('answer');
-		$this->db->join('news','no_id=id_quest');
+		$this->db->from('jawaban');
+		$this->db->join('konsultasi','konsultasi.id_konsultasi=jawaban.ID_konsultasi');
 		$query=  $this->db->get();
 		if($query->num_rows()==0)
 		{
 			return false;
 		}
-		return $query->result();
+		return $query->result_array();
 	} 
 }
 ?>

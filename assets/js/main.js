@@ -12,7 +12,10 @@ var main=function(){
  	$('.collapsible').collapsible({
      	accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
     });
-    
+    $('.cs').click(function(){
+		$('.card.small').click(function(){
+				$(this).addClass('z-depth-1');
+		});
 
 }
 $(document).ready(main);

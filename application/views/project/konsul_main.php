@@ -47,33 +47,33 @@
 		</div>
 		<div class="container">
 			<div>
-				<ul class="collapsible" data-collapsible="accordion">
-					<?php
-
-						var_dump($ans_list);
-						var_dump($question);
-						var_dump($ans_by_question);
-						if(isset($ans_by_question)) :
+				<ul class="" data-collapsible="accordion">
+					<?php ////php is here
 					?>
-					<?php foreach ($ans_by_question as $question => $ans_list):  ?>
+					<?php foreach ($result as $cat):  ?>
+					
 					<li class="">
-						<div class="collapsible-header">
-							<h6 class=""><?php echo $question[$question]; ?></h6>
+						<div class="">
+							<h6 class=""><?php echo $cat['PERTANYAAN']; 
+								var_dump($cat['3001']);
+							?></h6>
 						</div>
-						<?php foreach ($ans_list as $ans) : ?>
-						<div class="collapsible-body">
-							<p><?php echo $ans->content; ?></p>
-							<div class="right">
-								<p class="">by : Who $name</p>
+						<?php foreach ($cat['isi'] as $key ) {
+							echo $key['JAWABAN'];
+						}?>
+						<?php foreach ($cat['isi'] as $isi) : ?>
+							<div class="">
+								<p><?php echo $isi['JAWABAN']; ?></p>
+								<div class="right">
+									<p class="">by : Who $name</p>
+								</div>
 							</div>
-						</div>
 						<?php endforeach; ?>
 					<?php endforeach; ?>
 					</li>
-					<?php else: ?>
-					<p>Sorry Dude no content</p>
+					<?php //else: ?>
 
-				<?php endif; ?>
+				<?php //endif; ?>
 				</ul>
 			</div>
 			<!--div>

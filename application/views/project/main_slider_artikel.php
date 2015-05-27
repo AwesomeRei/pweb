@@ -8,6 +8,7 @@
 
 				<div class="slider">
 					<ul class="slides">
+						<?php ?>
 						<li>
 							<a href="#">
 							<img src="<?php echo base_url("assets/image/Capture.png") ?>">
@@ -16,16 +17,7 @@
 								<h3>Title Caption</h3>
 							</div>
 						</li>
-						<li>
-
-							<a href="#">
-							<img src="<?php echo base_url("assets/image/nlc3.jpg") ?>">
-							</a>
-							<div class="caption left-align">
-								<h3>Title Caption</h3>
-							</div>
-						</li>
-						
+						<?php ?>
 					</ul>
 				</div>
 			</div>

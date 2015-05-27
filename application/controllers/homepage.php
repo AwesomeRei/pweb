@@ -14,54 +14,48 @@
 		public function home()
 		{
 			$this->load->view('project/header');
-			$this->load->view('project/navbar');
-			$this->load->view('project/main');
+			$this->load->view('project/navbar_logged');
+			$this->load->view('project/main_slider_artikel');
 			$this->load->view('project/footer');
 		}
 		public function konsul() {
 
 			$this->load->Model('konsulmodel');
-
+			
 			$data= array();
-			$ans_list = $this->konsulmodel->get_quest();
-			if($ans_list){
-				$question = array();
-				$ans_by_question = array();
+			$category = $this->konsulmodel->get_quest();
 
-				foreach ($ans_list as $answer) 
+			$result = array();
+			foreach ($category as $cat) {
+				if($cat['ID_KONSULTASI'] && array_key_exists($cat['ID_KONSULTASI'], $result))
 				{
-					$question_id = $answer->no_id;
-					$question_title = $answer->title;
-
-					if(array_key_exists($question_id,$question))
-					{
-						$question[$question_id]=$question_title;
-					}
-					if(array_key_exists($question_id,$ans_by_question))
-					{
-						$ans_by_question[$question_id]=array();
-					}
-
-					$ans_by_question[$question_id][]=$answer;
+					$result[$cat['ID_KONSULTASI']]['isi'][]= $cat;
 				}
-				$data['title']=$question;
-				$data['ans_by_question']=$ans_by_question;
+				else
+				{
+					$result[$cat['ID_KONSULTASI']] =$cat;
+				}
 			}
-
-			$this->load->model('konsulmodel');
-			$data['main_content'] = 'konsul'; 
-			echo "----------";
-			var_dump($data);
-			echo "----------";
-			var_dump($ans_list);
-			echo "----------";
-			var_dump($ans_by_question);
-			echo "----------";
-			var_dump($question);
-						
+			$data['result']=$result;
 			$this->load->view('project/header');
 			$this->load->view('project/navbar_logged');
 			$this->load->view('project/konsul_main',$data);
+			$this->load->view('project/footer');
+		}
+		public function artikel()
+		{
+			//nanti di list semua
+			$this->load->view('project/header');
+			$this->load->view('project/navbar_logged');
+			$this->load->view('project/artikel_main');
+			$this->load->view('project/footer');
+		}
+
+		public function artikel_alone(){
+			//ini nanti ada yang dipassing
+			$this->load->view('project/header');
+			$this->load->view('project/navbar_logged');
+			$this->load->view('project/artikel_view');
 			$this->load->view('project/footer');
 		}
 	}
