@@ -11,4 +11,8 @@
     <script src="<?php echo base_url("assets/js/jquery-2.1.3.min.js") ?>"></script>
     <script src="<?php echo base_url("assets/materialize/js/materialize.js") ?>"></script>
     <script src="<?php echo base_url("assets/js/main.js") ?>"></script>
-	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>   
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url("assets/css/slider.css"); ?>">
+    <script src="<?php echo base_url("assets/ckeditor/ckeditor.js") ?>"></script>
+</head>
+<body>

@@ -94,7 +94,7 @@
 							</div></div>
 		</div>
 		<nav>
-			<div class="nav-wrapper">
+			<div class="nav-wrapper  blue darken-3">
 				<a href="<?php site_url('homepage/home') ?>" class="brand-logo left"><img src="<?php echo base_url("assets/image/Untitled-1.png") ?>" class="img-nav responsive-img"></a>
 				<a href="#" class="button-collapse" data-activates="mobile-demo"><i class="mdi-navigation-menu"></i></a>
 				<ul class="right hide-on-med-and-down">

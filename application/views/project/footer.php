@@ -1,24 +1,34 @@
 </main>
-<footer class="page-footer green">
-	<div class="row">
-		<div class="col s3 offset-s1">
-			<h5>sponsored by</h5>
-			<p>Some icons here here and here</p>
+
+<footer class="page-footer blue accent-3">
+	<div class="center row">
+		<div class="col s12">
+			<h5 class="white-text">sponsored by</h5>
+			<div class=" center row">
+				<div class="col s8">
+					<div class="row">
+						<div class="col s1">
+					<img src="<?php echo base_url('assets/image/Logo Bank BNI.jpg')?>" class="circle responsive-img img">
+				</div>
+				<div class="col s1">
+					<img src="<?php echo base_url('assets/image/Logo Bank Mandiri Syariah.jpg')?>" class="circle responsive-img">
+				</div>
+				<div class="col s1">
+					<img src="<?php echo base_url('assets/image/Logo DEPKES - BAKTI HUSADA.png')?>" class="circle responsive-img">
+				</div>
+				<div class="col s1">
+					<img src="<?php echo base_url('assets/image/logo arek its.png')?>" class="circle responsive-img img">
+				</div>
+				<div class="col s1">
+					<img src="<?php echo base_url('assets/image/lambang-its-color-std.png')?>" class="circle responsive-img img">
+				</div>
+					</div>
+					
+				</div>
+				
+			</div>
 		</div>
-		<div class="col s3 offset-s5">
-			<h5>sponsored by</h5>
-			<p>Some icons here here and here</p>
-		</div>
-		
 	</div>
 </footer>
-	<!--form>
-		<div class="input-field">
-			<input placeholder="username" id="username" type="text">
-			<label for="username">Name</label>
-			<input placeholder="password" id="password" type="password">
-			<label for="password"></label>
-		</div>
-	</form-->
 </body>
 </html>

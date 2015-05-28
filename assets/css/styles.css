@@ -8,6 +8,11 @@ body {
 main {
 	flex:1 0 auto;
 }
+.img {
+  max-height: 100px;
+  max-width: 100px;
+
+}
 
 .mine{
 	background-color: #2ECC71;

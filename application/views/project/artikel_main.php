@@ -13,7 +13,7 @@
 					<p class="">This is the title of the article  that will be displayed. Everybody stay strong, storm is coming but we'll get past this </p>
 				</div>
 				<div class="card-action">
-					<a href="#">read more. . .</a>
+					<a href="<?php echo site_url("homepage/artikel_alone") ?>">read more. . .</a>
 				</div>
 			</div>
 		</div>

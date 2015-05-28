@@ -1,21 +1,17 @@
 	<main>	
 	<br>
-	<!--a class="btn btn-med">
-		<h4>Add</h4>
-	</a-->
 	<div>
 		<a href="#modalform" class="btn add tooltipped modal-trigger tabs-wrapper" data-position="right" data-delay="50" data-tooltip="Ask Question"> 
 			<i class="mdi-content-add-circle-outline"></i>
 		</a>
-		<div id="modalform" class="modal">
-			<div class="row">
+		<div id="modalform" class="modal ">
+			<div class="row light-blue darken-1">
 				<div class="col s12">
-					<h3 class="center">Consultation</h3>
+					<h3 class="center white-text">Consultation</h3>
 				</div>
 			</div>
-			<div class="divider"></div>
 			<div class="row">
-				<form action="#" target="_blank" class="col s10 offset-s1">
+				<form action="#" target="_blank" class="col s10 offset-s1 ">
 					<div class="row">
 						<div class="input-field col s12">
 							<textarea id="quest" class="materialize-textarea validate"></textarea>

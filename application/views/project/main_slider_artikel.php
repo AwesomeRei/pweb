@@ -1,16 +1,15 @@
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url("assets/css/slider.css"); ?>">
-</head>
+
 <body>
 	<div>
 		<div class="row">
 			<br>
-			<div class="col s8 offset-s2">
+			<div class="col s10 offset-s1 z-depth-1">
 
 				<div class="slider">
 					<ul class="slides">
-						<?php ?>
+						<?php //top 5  ?>
 						<li>
-							<a href="#">
+							<a href="<?php echo site_url("homepage/artikel_alone") ?>">
 							<img src="<?php echo base_url("assets/image/Capture.png") ?>">
 							</a>
 							<div class="caption left-align">
