@@ -13,7 +13,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<form class="col s12">
+								<form method="post" action="insertion" class="col s12">
 									<div class="row">
 										<div class="input-field col s12">
 											<input name="fullname" type="text" id="full_name" class="validate" >
@@ -47,13 +47,13 @@
 											<label for="kota">Kota</label>
 										</div>
 										<div class="input-field col s4">
-											<input type="text" >
+											<input type="text" name = "no_telp">
 											<label for="no_telepon">NO Telp</label>
 										</div>
 									</div>
 									<div class="row">
 										<div class="input-field col s12">
-											<input type="email" id="email" class="validate">
+											<input type="email" id="email" name = "email" class="validate">
 											<label for="email">Email</label>
 										</div>
 									</div>
@@ -76,25 +76,25 @@
 								<form class="col s12">
 									<div class="row">
 										<div class="input-field col s12">
-											<input name="username" type="text" id="user_name" class="validate" >
-											<label for="user_name">User Name</label>
+											<input name="username" type="text" id="username" name="username"class="validate" >
+											<label for="username">User Name</label>
 										</div>
 									</div>
 
 									<div class="row">
 										<div class="input-field col s12">
-											<input type="password" name="password1" id="password1" class="validate">
+											<input type="password" name="password" id="password1" class="validate">
 											<label for="password1">Password</label>
 										</div>
 									</div>
 									<div class="row">
-										<button class="waves-effect waves-light btn " type="submit" name="action">Submit</button>
+										<button class="waves-effect waves-light btn " type="submit" name="action" value = 'login'>Submit</button>
 									</div>
 								</form>
 							</div></div>
 		</div>
 		<nav>
-			<div class="nav-wrapper  blue darken-3">
+			<div class="nav-wrapper">
 				<a href="<?php site_url('homepage/home') ?>" class="brand-logo left"><img src="<?php echo base_url("assets/image/Untitled-1.png") ?>" class="img-nav responsive-img"></a>
 				<a href="#" class="button-collapse" data-activates="mobile-demo"><i class="mdi-navigation-menu"></i></a>
 				<ul class="right hide-on-med-and-down">
@@ -102,15 +102,16 @@
 					
 				</ul>
 				<div class="hide-on-med-and-down">
-					<form action="#" class="right">
+					<?php echo validation_errors(); ?>
+					<?php echo form_open('homepage/login'); ?>
 						<div class="row">
 							<div class="input-field col s2 offset-s6">
 								<i class="mdi-action-account-circle white-text prefix navb"></i>
-								<input placeholder="username" type="text" id="user" class="validate">
+								<input placeholder="username" name = "username" type="text" id="user" class="validate">
 							</div>
 							<div class="input-field col s2">
 								<i class="mdi-content-create white-text prefix navb"></i>
-								<input placeholder="pass" type="password" id="pass" class="validate">
+								<input placeholder="pass" name = "password" type="password" id="pass" class="validate">
 							</div>
 							<div class="col s2">
 								<button class="waves-effect waves-light btn-flat btn-small white-text" type="submit">Log In</button>

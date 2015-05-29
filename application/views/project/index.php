@@ -47,7 +47,7 @@
 			</div>
 
 			<div class="col s2">
-				<img src="<?php echo base_url("assets/image/upon.jpg") ?>" class="responsive-img materialboxed" data-caption="Agung 5113100108">
+				<img src="<?php echo base_url("assets/image/agung.jpg") ?>" class="responsive-img materialboxed" data-caption="Agung 5113100108">
 			</div>
 
 			<div class="col s2">
@@ -55,7 +55,7 @@
 			</div>
 
 			<div class="col s2">
-				<img src="<?php echo base_url("assets/image/Capture.png") ?>" class="responsive-img materialboxed" data-caption="Gufron 5113100025">
+				<img src="<?php echo base_url("assets/image/upon.jpg") ?>" class="responsive-img materialboxed" data-caption="Gufron 5113100025">
 			</div>
 		</div>
 		<div class="row">
